@@ -1,9 +1,8 @@
-const sentence = "hello there from lighthouse labs";
-let sentence2 = '';
-for (const char of sentence) { 
+const sentence = "hello there from lighthouse labs\n";
+let count = 0;
+for (let char of sentence) {
+  count += 100;
   setTimeout(() => {
     process.stdout.write(char);
-  }, 50);
+  }, count);  
 };
-
-
